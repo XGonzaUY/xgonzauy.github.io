@@ -1,0 +1,79 @@
+.sectionform {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tituloform {
+    color: white;
+    margin: 60px 0;
+    font-size: 20px;
+}
+
+
+form {
+    margin: 60px 0;
+}
+
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+input, textarea {
+    outline: none;
+}
+
+textarea {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.021);  
+    color: #ff5100;    
+    border: 3px solid ;
+    border-radius: 10px;
+    transition: .2s;    
+    resize: none;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 0 35px;    
+}
+
+form input {
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.014);  
+    color: #ff5100;    
+    border: -15px solid ;
+    border-radius: 10px;
+    transition: .2s;    
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 50%;    
+}
+
+
+.boton__enviar {
+    font-size: 16px;
+    background-color: rgba(235, 88, 30, 0);  
+    color: #ff5100;    
+    border: 3px solid ;
+    border-radius: 10px;
+    transition: .2s;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.boton__enviar:hover {
+    background-color: rgba(83, 0, 14, 0.705);
+    color: rgb(233, 51, 51);
+    border: 2px solid transparent;
+    border-radius: 14px;    
+    transition: .4s;
+}

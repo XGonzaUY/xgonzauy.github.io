@@ -1,0 +1,247 @@
+@media screen and (max-width: 768px){
+    .header {
+        max-width: 90%;
+    }
+
+    .boton__navegacion {
+        display: block;
+        position: relative;
+        width: 45px;
+        height: 45px;
+        font-size: 40px;
+        padding: 5px;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+    }
+
+
+    .bi-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+
+    .bi-x-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform:rotate(-90deg);
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    .boton__navegacion.mostrar .bi-list {
+        transform:rotate(90deg);
+        opacity: 0;
+    }
+
+    .boton__navegacion.mostrar .bi-x-lg {
+        transform:rotate(0);
+        opacity: 1;
+    }
+
+    .navegacion {
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        background-color: rgba(22, 22, 22, 0.836);
+        width: 100%;
+        height: calc(100vh - 90px);
+        transition: all .5s;
+        backdrop-filter: blur(3px);
+    }
+
+    .navegacion.mostrar {
+        left: 0;
+    }
+
+    .lista__navegacion {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navegacion__item {
+        font-size: 16px;
+        width: 100%;
+
+    }
+
+    .imagen__gonza {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 170px;
+        width: 170px;
+        margin: auto;
+        transform: translateY(-20px);
+    }
+    .header__usuario__nombre {
+        display: flex;
+    }
+
+    /* .header__usuario__logo {
+        display: none;
+    } */
+
+    .inicio {
+        display: block;
+    }
+    .inicio__presentacion, .inicio__presentacion__dos {
+        font-size: 2rem;
+    }
+    .inicio__nombre {
+        font-size: 4rem;
+    }
+
+    .inicio__izquierda {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .inicio__botones {
+        display: flex;
+
+    }
+
+    .contenedor__sobremi {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .texto {
+        max-width: 95%;
+    }
+
+
+    .herramientas {
+        font-size: 18px;
+    }
+
+    .skills__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .hobbies__contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .tituloform {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.sectionform {
+        max-width: 740px;
+        height: 50%;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: contents;
+    }
+
+    footer {
+        height: 90px;
+    }
+}
+
+
+@media screen and (max-width: 406px){
+    
+    .inicio__botones {
+        flex-direction: column;
+    }
+
+    .img__formacion, img {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;    
+    }
+
+    .tituloform {
+        width: 100%;
+        margin: 50px auto 20px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      section.sectionform {
+        margin-bottom: 20px;
+        width: 300px;
+      }
+
+      form {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        max-width: 390px;
+        width: 100%;
+      }
+    form input, textarea, .boton__enviar {
+        width: 100%;
+    }
+    footer {
+        height: 120px;
+    }
+}
+
+
+
+
+/* @media screen and (max-width:890px) {
+
+    .header{
+        width: 95%;
+    }
+
+    .navegacion {
+        position: absolute;
+        top: 90px;
+        left: 100%;
+        width: 100%;
+        max-width: 450px;
+        height: calc(100vh - 90px);
+
+    }
+    .lista__navegacion {
+        width: 90%;
+        height: 90%;
+        max-height: 350px;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenedor__sobremi {
+        margin: 0 auto;
+        min-width: 380px;
+    }
+
+    .herramientas {
+
+    }
+     .skills__contenedor {
+        width: 85%;
+    }
+    .skills__item {
+        width: 85%;
+    }
+} */
